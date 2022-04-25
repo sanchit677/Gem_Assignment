@@ -3,7 +3,7 @@
   padding: 0px;
   margin: 0px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background: linear-gradient(to right, #659999, #f4791f);
+  background: rgb(106, 241, 250);
 }
 header {
   top: 0;
@@ -16,7 +16,7 @@ h1 {
   padding: 20px;
   border: 4px solid black;
   border-style: double;
-  background: linear-gradient(to right, #fc354c, #0abfbc);
+  background-color: gray;
 }
 .container {
   margin: 20px;
@@ -34,18 +34,18 @@ h1 {
 #sel {
   margin: 20px;
   text-align: center;
-  color: gold;
+  color:yellowgreen;
 }
 .box #para2 {
   font-size: 30px;
   text-align: center;
-  color: rgb(0, 255, 255);
+  color: darkkhaki;
   font-family: "Times New Roman", Times, serif;
   font-variant: small-caps;
 }
 .box #para2 span {
   font-size: 35px;
-  color: rgb(193, 236, 201);
+  color: rgb(76, 188, 96);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
