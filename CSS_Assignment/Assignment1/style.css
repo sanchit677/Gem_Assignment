@@ -149,7 +149,7 @@
   .prop {
     text-align: center;
     border: 4px solid black;
-    border-style: double;
+    border-style: dotted;
     width: 75%;
     margin: auto;
     margin-top: 30px;
@@ -176,43 +176,43 @@
   }
  
   #box1 {
-    background-color: red;
+    background-color: salmon;
     position: static;
      
     top: 10px;
     left: 10px;
   }
   #box2 {
-    background-color: blue;
+    background-color: darkkhaki;
   }
   #box3 {
-    background-color: brown;
+    background-color: forestgreen;
   }
   
    
   #box4 {
-    background-color: red;
+    background-color: salmon;
   }
   #box5 {
-    background-color: blue;
+    background-color: darkkhaki;
     position: relative;
     
     top: 20px;
     left: 30px;
   }
   #box6 {
-    background-color: brown;
+    background-color: forestgreen;
   }
   
   
   #box7 {
-    background-color: red;
+    background-color: salmon;
   }
   #box8 {
-    background-color: blue;
+    background-color: darkkhaki;
   }
   #box9 {
-    background-color: brown;
+    background-color: forestgreen;
     position: absolute;
     right: 5px;
   }
@@ -233,47 +233,66 @@
     overflow: scroll;
   }
   
-  div.sticky {
-    position: sticky;
-    top: 0;
-    background-image: linear-gradient(rgb(59, 15, 253), yellow);
-    padding: 30px;
-    font-size: 20px;
-    text-align: center;
+  #sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  background: #f83d23;
+  width: 100px;
+  height: 100px;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 6px #000;
+  color: #fff;
+}
+.extra,
+#wrapper {
+  width: 75%;
+  margin: auto;
+  background-color: #ccc;
+}
+#wrapper {
+  height: 800px;
+}
+.extra {
+  height: 100px;
+}
+body {
+  font-family: georgia;
+  height: 1000px;
+}
+h4 {
+  text-align: center;
+}
+@media (min-height: 768px) {
+  #wrapper{
+    height: 2000px;
   }
+}
   
-   
+.menu{
+  height: 100px;
+  background-color: #B2D6FF;
+}
+
+.sidebar{
+  height: 200px;
+  width: 200px;
+  background-color: #F09A9D;
+}
+
+.content{
+  height: 400px;
+  background-color: #F5CF8E;
+}
+
+.footer{
+  height: 100px;
+  background-color: #D6E9FE;
+}
   
-  .square {
-    width: 100%;
-    height: 250px;
-    border: 2px solid black;
-    background-color: white;
-  }
-  #square1 {
-    float: right;
-    width: 48%;
-    height: 100px;
-    margin-bottom: 10px;
-    border: 2px solid black;
-    background-color: yellow;
-  }
-  #square2 {
-    float: left;
-    width: 48%;
-    height: 100px;
-    margin-bottom: 10px;
-    border: 2px solid black;
-    background-color: rebeccapurple;
-  }
-  #square3 {
-    clear: both;
-    clear: left;
-    width: 100%;
-    height: 100px;
-    margin-bottom: 10px;
-    background-color: brown;
-  }
+  
   #vis {
     visibility: visible;
   }
