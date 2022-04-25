@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+<style>
+    #div1 > p {
+        background-color: cyan;
+    }
+
+    #div1 + p {
+        background-color: yellow;
+    }
+
+    #div2 ~ p {
+        background-color: red;
+    }
+</style>
+<body>
+    <p>Para 1 outside div</p>
+    <div id="div1">
+        <p>Para 1 in div1</p>
+        <p>Para 2 in div1</p>
+        <section>
+            <p>Para 3 in div1</p>
+        </section>
+        <p>Para 4 in div1</p>
+    </div>
+    <p>Para 2 outside div</p>
+    <p>Para 3 outside div</p>
+    
+    <div id="div2">
+        <p>Para inside div2</p>
+    </div>
+    <p>Para 4 outside div</p>
+    <p>Para 5 outside div</p>
+</body>
+</html>

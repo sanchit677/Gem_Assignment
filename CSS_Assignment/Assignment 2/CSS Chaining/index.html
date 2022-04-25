@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Chaining</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Reduce CSS code using CSS chaining concept.</h1>
+    </header>
+
+    <div class="container">
+        <h2 class="res">Chaining Selectors </h2>
+      <p id="detail">
+        When writing CSS rules, it's possible to require an HTML element to have two or more CSS selectors at the same time.
+        This is done by combining multiple selectors, which refer to as chaining. For instance, if there was a .chaining class for h1 elements, the CSS would look like<br>
+        <p id="code">
+        h1.chaining{<br>
+        <br>
+        }<br>
+        </p>
+        The code above would select only the h1 elements that have a class of chaining. If a 'p' element also had a class of chaining, the rule in the example would not style the paragraph.<br><br>
+        
+    <div class="box">
+        <h3 id="sel">"I will select the second paragraph under this heading and style it using css chaining concept"</h3>
+        <h5 id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis blanditiis dolores, impedit accusantium reiciendis est qui fuga earum iusto? Veritatis accusamus, esse dolore molestiae aperiam totam quo distinctio rem!</h5>  
+        <h5 id="para2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span>Itaque veritatis sint, doloribus dicta in dolorum, est voluptatem hic atque</span>, facere ex architecto quia quidem autem necessitatibus iure. Natus, itaque eum.</h5>
+        <h5 id="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, pariatur veniam. Exercitationem corporis expedita tempore praesentium reiciendis, quis maiores numquam, voluptatibus, quia omnis ratione. Est esse iste necessitatibus sequi excepturi.</h5>
+    </div>
+
+    <h3 id="last">"I have styled the inside of the second paragraph using a span tag to target the part and then used CSS Chaining concept"</h3>
+    </p>
+    </div>
+</body>
+</html>
