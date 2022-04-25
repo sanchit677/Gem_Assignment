@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Student Registration Form</h1>
+    </header>
+    <main>
+      <form>
+        <label for="name" class="left_label">Name :</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter full name"
+        /><br />
+        <label for="fathername" class="left_label">Father's name :</label>
+        <input type="text" id="fathername" name="fathername" /><br />
+        <label for="mothername" class="left_label">Mother's name :</label>
+        <input type="text" id="mothername" name="mothername" /><br />
+        <label for="phonenumber" class="left_label">Phone Number :</label>
+        <input
+          type="number"
+          class="left_label"
+          id="phonenumber"
+          name="fathername"
+          placeholder="017xxxxxxx"
+        /><br />
+        <label for="email" class="left_label">Email :</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="sample@example.com"
+        /><br />
+        <label for="email" class="left_label">Gender :</label>
+        <input type="radio" name="Gender" value="male" />Male
+        <input type="radio" name="Gender" value="female" />Female
+        <input type="radio" name="Gender" value="others" />Others <br />
+        <label for="dob" class="left_label">Date Of Birth :</label>
+        <input type="date" name="dob" id="dob" /><br />
+        <label for="address" class="left_label">Address :</label>
+        <input
+          type="text"
+          name="address"
+          id="address"
+          placeholder="Street - House - Road"
+        />
+        <br />
+        <label for="bloodgroup" class="left_label">Blood Group :</label>
+        <select name="bloodgroup" id="bloodgroup">
+          <option value="apos">A+</option>
+          <option value="aneg">A-</option>
+          <option value="bpos">B+</option>
+          <option value="bneg">B-</option>
+          <option value="opos">O+</option>
+          <option value="oneg">O-</option>
+          <option value="abpos">AB+</option>
+          <option value="abneg">AB-</option>
+        </select>
+        <br />
+        <label for="department" class="left_label">Department :</label>
+        <input type="radio" name="department" value="cse" />CSE
+        <input type="radio" name="department" value="eee" />EEE
+        <input type="radio" name="department" value="bba" />BBA <br />
+        <label for="course" class="left_label"> Course :</label>
+        <input type="checkbox" id="c" name="course" value="c" />
+        <label for="c">C</label>
+        <input type="checkbox" id="c++" name="course" value="c++" />
+        <label for="c++">C++</label>
+        <input type="checkbox" id="java" name="course" value="java" />
+        <label for="java">Java</label>
+        <input type="checkbox" id="ai" name="course" value="ai" />
+        <label for="ai">AI</label>
+        <input
+          type="checkbox"
+          id="machinelearning"
+          name="course"
+          value="machinelearning"
+        />
+        <label for="machinelearning">Machine Learning</label>
+        <input type="checkbox" id="robotics" name="course" value="robotics" />
+        <label for="robotics">Robotics</label> <br />
+        <label for="photo" class="left_label">Photo :</label>
+        <input type="file" name="photo" id="photo" /><br />
+        <br />
+        <input type="submit" value="Submit" />
+        <input type="reset" />
+      </form>
+      <table>
+        <tr>
+          <th>SNo</th>
+          <th>Name</th>
+          <th>Phone No.</th>
+          <th>Gender</th>
+          <th>City</th>
+          <th>Hobbies</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>ABC</td>
+          <td>424232323</td>
+          <td>Male</td>
+          <td>Delhi</td>
+          <td rowspan="2">singing</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>XYZ</td>
+          <td>76232323</td>
+          <td>Male</td>
+          <td>Mathura</td>
+          
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>UVW</td>
+          <td>98232323</td>
+          <td>Female</td>
+          <td>Mumbai</td>
+          <td>Swimming</td>
+        </tr>
+      </table>
+       
+      <div>
+        <h2 class="prop">
+          Sample demo demonstrating position, float, display and visibility
+          concepts.
+        </h2>
+        <h2 id="pos">Positioning Properties:</h2>
+
+        <h3>1. Static=></h3>
+        <p class="detail">
+          All HTML elements are positioned static by default. Elements render in order, as they appear in the document flow.<br>
+          The properties are left, right, top, bottom, and z-index
+          do not affect the elements positioned as static.
+          <div class="box" id="box1"></div>
+          <div class="box" id="box2"></div>
+          <div class="box" id="box3"></div>
+        </p>
+
+        <h3>2. Relative=></h3>
+        <p class="detail">
+            It is used when we need to position an HTML element relative to its normal position.<br>
+            The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position
+            <div class="box" id="box4"></div>
+          <div class="box" id="box5"></div>
+          <div class="box" id="box6"></div>
+        </p>
+
+        <h3>3. Absolute=></h3>
+        <p class="detail">
+            An element with the absolute position will move according to the position of its parent element.<br>
+            The element is positioned relative to its first positioned (not static) ancestor element
+            <div class="box" id="box7"></div>
+          <div class="box" id="box8"></div>
+          <div class="box" id="box9"></div>
+        </p>
+
+        <h3>4. Fixed=></h3>
+        <p class="detail">
+            An element with position:fixed will remain stuck to a specific position even after the page is scrolled.<br>
+            The element is positioned relative to the browser window
+            <p id="fix">"The header section is perfect example of 'Fixed' positioning"</p>
+        </p>
+
+        <h3>5. Sticky=></h3>
+        <p class="detail">
+            It is a hybrid of relative and fixed position.<br>
+            A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+            <div class="container">
+                <p>Scroll down </p>
+                <div class="sticky">stick to the screen when you will scroll down</div>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus sit molestiae ab eum harum eius sed repellat dicta reiciendis maiores doloribus vero, earum doloremque odit modi, aut cumque non excepturi accusantium cupiditate magni voluptatum. Alias cumque iure ipsum molestias iusto ducimus. Dicta, non sequi fugit blanditiis cumque expedita eveniet. Vero nemo quo consequatur at animi nam explicabo rem dolorum quam fugit natus cupiditate delectus culpa quas, vel aperiam expedita atque reiciendis. Dignissimos laboriosam obcaecati temporibus dolorum ex sint atque culpa facilis, quae fugit aliquid eius, qui inventore ea maxime fugiat. Numquam harum repellendus architecto consectetur rerum molestiae ducimus maxime quis est at provident iusto ut dolorum quod distinctio omnis ullam, impedit dolore rem eligendi labore sunt, hic in repellat? Error, similique ipsum. Sequi, non aspernatur minima modi, atque dicta animi temporibus exercitationem quibusdam tenetur maxime magni dignissimos, hic eum corporis? Debitis soluta repellat omnis qui impedit. Aliquam, quas totam neque nesciunt obcaecati enim? Veritatis saepe rem reiciendis doloremque accusamus consequuntur aliquid et, molestias, unde, quasi laudantium hic assumenda harum animi. Sunt veniam itaque reiciendis unde, et eos fugit quasi sed commodi, cum similique ratione! Ad, quis. Officiis tenetur quidem nulla vero itaque obcaecati repudiandae perferendis eligendi? Aperiam fuga quae cumque est eligendi placeat quod deserunt doloribus eum inventore commodi quo ea cupiditate, aut accusantium vero quas, beatae, obcaecati dolore rerum rem voluptas? Sed, amet ratione dolore eos recusandae distinctio eum numquam animi earum sequi perspiciatis quibusdam minus cum neque velit consequatur unde ducimus? Amet veniam sapiente consequatur porro nobis? Eius vel maiores quisquam necessitatibus consequatur id perspiciatis quo, illo quaerat, aliquid totam voluptas repellendus aut quasi? Labore nesciunt, rem incidunt fugit et cumque quis unde, iste deserunt fuga neque sed dicta eaque? Nihil magni optio odit expedita. Fugit assumenda iste sit recusandae qui accusantium velit animi quae! Provident accusantium, odio dolore voluptates suscipit officiis, eos earum alias sapiente magni commodi, consequatur impedit mollitia deserunt illum error quibusdam! Temporibus, consequatur eligendi repellat voluptatem nostrum ut. Molestiae deleniti voluptate facilis id quam. Mollitia sed, aliquid asperiores, est repudiandae, dolores tempora perspiciatis beatae quas inventore nisi. Rem, esse quos quia excepturi quaerat recusandae atque corrupti? Nam accusantium praesentium, explicabo debitis cupiditate, culpa delectus quos obcaecati natus non consequatur aliquam reprehenderit maiores ad dolorem. Aperiam ratione sequi, dicta praesentium explicabo iste cum vero laudantium asperiores velit tenetur ut beatae animi, quam aliquam enim illum fugit blanditiis impedit tempora assumenda! Dicta omnis labore praesentium ea!
+            </div>
+        </p>
+
+        <h2 id="flo">FLoat Properties=></h2>
+
+        <h3>1. Left--> The elements floats to the left of its container.<br>
+            2. Right--> The elements floats to the right of its container.<br>
+            3. None--> The element does not float (it will be displayed just where it occurs in the text). This is default.<br>
+            4. Inherit--> The element inherits the float value of its parent.</h3>
+
+            <div class="square">
+                <div id="square1"></div>
+                <div id="square2"></div>
+                <div id="square3"></div>
+            </div>
+
+         <h2 id="dis">Display Properties: </h2>   
+         <h3>1.   inline -->The inline element takes the required width only. It doesn't force the line break so the flow of text doesn't break in inline example.<br>
+             2.   inline-block -->The CSS display inline-block element is very similar to inline element but the difference is that you are able to set the width and height.<br>
+             3.   block -->The CSS display block element takes as much as horizontal space as they can. Means the block element takes the full available width. They make a line break before and after them.<br>
+             4.   none-->The "none" value totally removes the element from the page. It will not take any space.</h3>
+        
+             <h2 id="dis">Visibility: </h2>   
+             <h3>1. Visibility: hidden<br>
+                <p id="nvis">This paragraph is not visible!</p>
+                 2. Visibility: visible
+                <p id="vis">This paragraph is visible!</p>
+                 </h3>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
