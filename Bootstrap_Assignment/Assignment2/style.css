@@ -1,4 +1,98 @@
-#Agent{
+* {
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: rgb(230, 230, 230);
+}
+button{
+  background-color: transparent !important;
+}
+a,
+h1,
+h3 {
+  color: #264a9f !important;
+}
+.shadow {
+  box-shadow: 8px 8px 20px -10px rgba(0,0,0,0.50), -5px -5px 10px #ffff !important;
+  border: none;
+}
+#line{
+  font-size: 13px;
+  letter-spacing: 0.4px;
+}
+label {
+  color: #7A86A3;
+}
+input , select , input::-webkit-input-placeholder , select::-webkit-input-placeholder{
+  text-indent: 10px;
+  font-size: 13px !important;
+}
+.form-control,
+.form-select {
+  color: #7A86A3;
+  border-radius: 20px;
+  box-shadow: inset 3px 3px 6px #bfc3cf, inset -3px -3px 6px #ffffff;
+  background-color: #ecedf1;
+}
+.form-control:focus,
+.form-select:focus {
+  background-color: #ecedf1;
+  box-shadow: inset 4px 4px 6px #bfc3cf, inset -4px -4px 6px #ffffff;
+  border: none;
+}
 
-    
+.proceed_button {
+  background: linear-gradient(to right, #00c9ff, #2c14c5) !important;
+  margin-left: 10px;
+  border: none;
+  color:rgb(0, 0, 0, 0.5);
+  color: white;
+}
+.proceed_para {
+  font-size: x-small;
+  margin-left: 10px;
+  margin-top: 10px;
+  color:rgb(0, 0, 0, 0.5);
+}
+.small-text{
+  font-size: 14px;
+}
+#offers img{
+  height: 40px;
+  position: relative;
+  left: -15px;
+}
+#offers .row{
+  margin: 10px 0;
+}
+#container-offers{
+  border-bottom: 1.5px dotted black;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+#tree{
+  position: relative;
+  bottom: -34px;
+  float: right;
+}
+ul{
+  margin-top: 20px;
+}
+ul>li{
+  margin-bottom: 20px;
+  list-style: none;
+  font-size: 14px;
+  color: rgb(116, 122, 124);
+  position: relative;
+  left: -13%;
+}
+li:hover{
+  color: #264a9f;
+  cursor: pointer;
+}
+
+#footer{
+  position: relative;
+  left: -8%;
+  width: 100vw;
 }
