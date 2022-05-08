@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.outer-box {
+    max-width: max-content;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
